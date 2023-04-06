@@ -4,6 +4,7 @@ import android.content.Context
 import android.util.AttributeSet
 import androidx.recyclerview.widget.RecyclerView
 import com.example.scrollrecyclerview.R
+import com.example.scrollrecyclerview.adapter.InfiniteAutoScrollAdapter
 
 const val DEFAULT_SCROLL_SPEED = 35000f
 const val DEFAULT_ITEM_MARGIN = 12
