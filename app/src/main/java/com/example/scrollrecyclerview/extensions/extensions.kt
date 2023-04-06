@@ -5,6 +5,10 @@ import android.content.res.Resources
 import android.util.TypedValue
 import androidx.annotation.Px
 import androidx.recyclerview.widget.RecyclerView
+import com.rubensousa.decorator.ColumnProvider
+import com.rubensousa.decorator.GridMarginDecoration
+import com.rubensousa.decorator.LinearMarginDecoration
+
 
 fun Resources.dpToPx(dp: Int): Int {
     return TypedValue.applyDimension(
@@ -22,17 +26,20 @@ fun Resources.dpToPx(dp: Float): Int {
     ).toInt()
 }
 
-fun Context.getGridHorizontalHexagonMarginDecoration() = GridMarginDecoration(
-    margin = this.resources.dpToPx(12),
-    columnProvider = object : ColumnProvider {
-        override fun getNumberOfColumns(): Int = 4
-    },
-    orientation = RecyclerView.HORIZONTAL
-)
+fun Context.getGridHorizontalHexagonMarginDecoration() =
+    GridMarginDecoration(
+        horizontalMargin = this.resources.dpToPx(12),
+        verticalMargin = this.resources.dpToPx(12),
+        columnProvider = object : ColumnProvider {
+            override fun getNumberOfColumns(): Int = 4
+        },
+        orientation = RecyclerView.HORIZONTAL
+    )
 
 fun Context.getGridHorizontalMarginDecoration() =
     GridMarginDecoration(
-        margin = this.resources.dpToPx(12),
+        horizontalMargin = this.resources.dpToPx(12),
+        verticalMargin = this.resources.dpToPx(12),
         columnProvider = object : ColumnProvider {
             override fun getNumberOfColumns(): Int = 4
         },
