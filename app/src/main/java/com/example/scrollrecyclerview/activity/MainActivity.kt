@@ -1,7 +1,8 @@
-package com.example.scrollrecyclerview
+package com.example.scrollrecyclerview.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.scrollrecyclerview.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
