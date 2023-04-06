@@ -5,6 +5,8 @@ import android.util.AttributeSet
 import androidx.recyclerview.widget.RecyclerView
 import com.example.scrollrecyclerview.R
 import com.example.scrollrecyclerview.adapter.InfiniteAutoScrollAdapter
+import com.example.scrollrecyclerview.extensions.getGridHorizontalMarginDecoration
+import com.example.scrollrecyclerview.extensions.getListHorizontalMarginDecoration
 import com.example.scrollrecyclerview.layoutmanager.AutoScrollHorizontalGridLayoutManager
 import com.example.scrollrecyclerview.layoutmanager.AutoScrollHorizontalListLayoutManager
 

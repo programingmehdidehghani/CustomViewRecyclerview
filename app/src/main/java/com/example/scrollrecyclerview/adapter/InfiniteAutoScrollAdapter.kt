@@ -1,5 +1,6 @@
 package com.example.scrollrecyclerview.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,6 +14,7 @@ class InfiniteAutoScrollAdapter (private val evenLayoutResId: Int) :
 
     private var images = arrayListOf<Int>()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun notifyData(images: List<Int>) {
         this.images.clear()
         this.images.addAll(images)
