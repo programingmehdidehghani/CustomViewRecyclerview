@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:popupTheme="@style/Theme.InfiniteScrollRecyclerView.PopupOverlay" />
 
-    <com.frontier.infinitescrollrecyclerview.view.InfiniteAutoScrollRecyclerView
+    <com.example.scrollrecyclerview.view.InfiniteAutoScrollRecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
