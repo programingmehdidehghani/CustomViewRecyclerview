@@ -3,6 +3,7 @@ package com.example.scrollrecyclerview.activity
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.scrollrecyclerview.R
+import kotlinx.android.synthetic.main.activity_list_horizontal_auto_scroll.*
 
 class ListHorizontalAutoScrollActivity : AppCompatActivity() {
 
